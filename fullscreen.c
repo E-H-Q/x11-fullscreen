@@ -48,12 +48,12 @@ Atom property;
 
 void fill() {
 	if (btn == 0) {
-		for (i = 0; i < 50; i++) {
+		for (i = 0; i < 50; i++) { /* windowed is selected */
 			XDrawRectangle(dis, win, green_gc, width/2+50, height/2-25, 100, 50-i);
 			XDrawString (dis, win, black_gc, width/2+75, height/2+3, "WINDOWED", 8);
 		}
 	}
-	else if (btn == 1) {
+	else if (btn == 1) { /* fullscreen is selected */
 		for (i = 0; i < 50; i++) {
 			XDrawRectangle(dis, win, green_gc, width/2-150, height/2-25, 100, 50-i);
 			XDrawString (dis, win, black_gc, width/2-130, height/2+3, "FULLSCREEN", 10);
